@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginVertical="8dp"
+    app:cardCornerRadius="10dp"
+    android:backgroundTint="@color/teal"
+    app:cardElevation="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Parking Name -->
+        <TextView
+            android:id="@+id/tvParkingName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Parking Spot Name"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black" />
+
+        <!-- Mode (2-wheeler / 4-wheeler) -->
+        <TextView
+            android:id="@+id/tvMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mode: 2-wheeler"
+            android:textSize="14sp"
+            android:textColor="@color/dark_grey"
+            android:textStyle="bold"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Parking Status -->
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status: Vacant"
+            android:textSize="14sp"
+            android:textColor="@color/dark_grey"
+            android:textStyle="bold"
+            android:layout_marginTop="2dp"/>
+
+        <!-- Distance from Current Location -->
+        <TextView
+            android:id="@+id/tvDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Distance: 500m"
+            android:textSize="14sp"
+            android:textColor="@color/dark_grey"
+            android:textStyle="bold"
+            android:layout_marginTop="2dp"/>
+
+        <!-- Book Button -->
+        <Button
+            android:id="@+id/btnBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Book Parking"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

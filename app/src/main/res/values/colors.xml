@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blue">#007BFF</color>
+    <color name="red">#D32F2F</color>
+    <color name="teal">#018786</color>
+    <color name="dark_teal"> #004D40</color>
+    <color name="purple_700">#6200EE</color>
+    <color name="red_700">#D50000</color>
+    <!-- Button Color (Dark Green for better contrast) -->
+    <color name="primary_button_color">#388E3C</color>
+    <color name="light_grey">#F1F1F1</color> <!-- Light Gray -->
+    <color name="dark_grey">#333333</color> <!-- Dark Gray/Black -->
+    <color name="light_teal">#A0D8D4</color> <!-- Very Light Teal -->
+    <color name="off_white">#F8F8F8</color> <!-- Off-white -->
+
+    <!-- Text Color for buttons and links -->
+    <color name="button_text_color">#FFFFFF</color>  <!-- White text is still fine with the dark background -->
+
+    <!-- Link Color -->
+    <color name="link_color">#007BFF</color>
+
+    <!-- Input Field Background Color -->
+    <color name="input_background">#F4F6F8</color>
+
+    <!-- Card Background -->
+    <color name="card_background">#FFFFFF</color>
+</resources>

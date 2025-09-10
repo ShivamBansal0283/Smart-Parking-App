@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="6dp"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:elevation="12dp"
+        android:background="@color/teal">
+
+        <!-- Vehicle Number -->
+        <TextView
+            android:id="@+id/tvVehicleNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="auto"
+            android:fontFamily="@font/roboto_regular"
+            android:paddingBottom="4dp"
+            android:text="Number: ABC123"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textIsSelectable="true"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <!-- Vehicle Model -->
+        <TextView
+            android:id="@+id/tvVehicleModel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:paddingBottom="4dp"
+            android:text="Model: Tesla Model X"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textIsSelectable="true"
+            android:textSize="20sp" />
+
+        <!-- Vehicle Type -->
+        <TextView
+            android:id="@+id/tvVehicleType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:paddingBottom="8dp"
+            android:text="Type: Electric"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textIsSelectable="true"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:orientation="vertical"-->
+<!--    android:padding="10dp">-->
+<!--&lt;!&ndash;    android:background="@drawable/card_background">&ndash;&gt;-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvVehicleNumber"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Number: ABC123"-->
+<!--        android:textSize="16sp"-->
+<!--        android:textColor="@color/black"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvVehicleModel"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Model: Tesla Model X"-->
+<!--        android:textSize="16sp"-->
+<!--        android:textColor="@color/black"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvVehicleType"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Type: Electric"-->
+<!--        android:textSize="16sp"-->
+<!--        android:textColor="@color/black"/>-->
+<!--</LinearLayout>-->

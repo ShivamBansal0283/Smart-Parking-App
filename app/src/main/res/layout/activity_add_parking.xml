@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/light_teal">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_teal"
+        app:title="Add Parking Spot"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <!-- Google Map Fragment -->
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/toolbar"/>
+
+    <!-- ScrollView for Form -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/mapFragment"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etParkingName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Parking Spot Name"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/etPricePerHour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Price per Hour"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/etPricePerMin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Price per Minute"
+                android:inputType="numberDecimal" />
+
+            <Spinner
+                android:id="@+id/spinnerMode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/vehicle_modes"/>
+
+            <EditText
+                android:id="@+id/etCapacity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Total Capacity"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/etAvailableSlots"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Available Slots"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/btnSelectLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/dark_grey"
+                android:text="Select Location on Map" />
+
+            <Button
+                android:id="@+id/btnAddParking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:text="Add Parking Spot"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

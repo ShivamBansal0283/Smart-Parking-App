@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="2dp"
+    android:background="@color/light_teal"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SELECT VEHICLE"
+        android:background="@color/light_teal"
+        android:layout_gravity="center_horizontal"
+        android:padding="20dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="25sp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="40dp"/>
+
+    <!-- RecyclerView to display vehicles as cards -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"/>
+
+
+</LinearLayout>

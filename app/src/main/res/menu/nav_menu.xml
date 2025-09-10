@@ -1,0 +1,88 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_home"
+            android:title="Home"
+            android:icon="@drawable/ic_home"
+            android:iconTint="@color/black"
+            android:titleTextColor="@color/black"/>
+
+        <item android:id="@+id/nav_vehicles"
+            android:title="My Vehicles"
+            android:icon="@drawable/ic_car"
+            android:iconTint="@color/black"
+            android:titleTextColor="@color/black"/>
+
+        <item android:id="@+id/nav_profile"
+            android:title="Profile"
+            android:icon="@drawable/ic_profile"
+            android:iconTint="@color/black"
+            android:titleTextColor="@color/black"/>
+
+        <item android:id="@+id/nav_parking"
+            android:title="Parking"
+            android:icon="@drawable/ic_parking"
+            android:iconTint="@color/black"
+            android:titleTextColor="@color/black"/>
+
+        <item android:id="@+id/nav_addparkingspot"
+            android:title="Add Parking Spot"
+            android:icon="@drawable/ic_camera"
+            android:iconTint="@color/black"
+            android:titleTextColor="@color/black"/>
+
+        <item android:id="@+id/nav_wallet"
+            android:title="Wallet"
+            android:icon="@drawable/ic_wallet"
+            android:iconTint="@color/black"
+            android:titleTextColor="@color/black"/>
+
+        <item android:id="@+id/nav_history"
+            android:title="History"
+            android:icon="@drawable/ic_history"
+            android:iconTint="@color/black"
+            android:titleTextColor="@color/black"/>
+    </group>
+
+    <item android:id="@+id/nav_logout"
+        android:title="Logout"
+        android:icon="@drawable/ic_logout"
+        android:iconTint="@color/black"
+        android:titleTextColor="@color/black"/>
+</menu>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<menu xmlns:android="http://schemas.android.com/apk/res/android">-->
+<!--    <group android:checkableBehavior="single">-->
+<!--        <item android:id="@+id/nav_home" android:title="Home" android:icon="@drawable/ic_home"/>-->
+<!--        <item android:id="@+id/nav_vehicles" android:title="My Vehicles" android:icon="@drawable/ic_car"/>-->
+<!--        <item android:id="@+id/nav_profile" android:title="Profile" android:icon="@drawable/ic_profile"/>-->
+<!--        <item android:id="@+id/nav_parking" android:title="Parking" android:icon="@drawable/ic_parking"/>-->
+<!--        <item android:id="@+id/nav_tickets" android:title="Tickets/Challans" android:icon="@drawable/ic_camera"/>-->
+<!--        <item-->
+<!--            android:id="@+id/nav_wallet"-->
+<!--            android:title="Wallet"-->
+<!--            android:icon="@drawable/ic_wallet" />-->
+<!--        <item-->
+<!--            android:id="@+id/nav_histroy"-->
+<!--            android:title="History"-->
+<!--            android:icon="@drawable/ic_history" /> &lt;!&ndash; Add your wallet icon here &ndash;&gt;-->
+<!--    </group>-->
+
+<!--    <item android:id="@+id/nav_logout" android:title="Logout" android:icon="@drawable/ic_logout"/>-->
+<!--</menu>-->

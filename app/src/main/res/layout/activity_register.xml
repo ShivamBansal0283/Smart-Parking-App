@@ -1,0 +1,301 @@
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_teal"
+    tools:context=".HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="11dp"
+    android:padding="20dp"
+    android:layout_centerInParent="true"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:backgroundTint="@color/teal">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Full Name Field -->
+        <EditText
+            android:id="@+id/etFullName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Full Name"
+            android:padding="10dp"
+            android:background="@color/light_teal"
+            android:textSize="16sp"
+            android:layout_marginTop="15dp"/>
+
+        <!-- Email Field -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Email"
+            android:padding="10dp"
+            android:background="@color/light_teal"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:inputType="textEmailAddress"/>
+
+        <!-- Phone Number Field -->
+        <EditText
+            android:id="@+id/etPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Phone Number"
+            android:padding="10dp"
+            android:background="@color/light_teal"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:inputType="phone"/>
+
+        <!-- OTP Button -->
+        <Button
+            android:id="@+id/btnVerifyOTP"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Verify OTP"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/dark_grey"/>
+
+        <!-- Gender Selection -->
+        <RadioGroup
+            android:id="@+id/radioGroupGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <RadioButton
+                android:id="@+id/rbMale"
+                style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+                android:layout_width="79dp"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rbFemale"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rbOther"
+                android:layout_width="107dp"
+                android:layout_height="wrap_content"
+                android:text="Other"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+        </RadioGroup>
+
+        <!-- Profile Picture Upload -->
+        <Button
+            android:id="@+id/btnUploadProfilePic"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Upload Profile Picture"
+            android:backgroundTint="@color/dark_grey"
+            android:layout_marginTop="10dp"/>
+
+        <ImageView
+            android:id="@+id/ivProfilePic"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp" />
+
+        <!-- Password Field -->
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Password"
+            android:padding="10dp"
+            android:background="@color/light_teal"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword"/>
+
+        <!-- Confirm Password Field -->
+        <EditText
+            android:id="@+id/etConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Confirm Password"
+            android:padding="10dp"
+            android:background="@color/light_teal"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword"/>
+
+        <!-- Terms and Conditions Checkbox -->
+        <CheckBox
+            android:id="@+id/checkboxTerms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I agree to the Terms and Conditions"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <!-- Register Button -->
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Register"
+            android:backgroundTint="@color/black"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="15dp"/>
+
+        <!-- Already have an account? Login -->
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account? Login"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+</RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:padding="20dp">-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        android:gravity="center_horizontal">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Register"-->
+<!--            android:textSize="24sp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_gravity="center_horizontal"/>-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/etFullName"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:hint="Full Name"-->
+<!--            android:padding="10dp"-->
+<!--            android:background="@drawable/input_background"-->
+<!--            android:textSize="16sp"-->
+<!--            android:layout_marginTop="15dp"/>-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/etEmail"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:hint="Email"-->
+<!--            android:padding="10dp"-->
+<!--            android:background="@drawable/input_background"-->
+<!--            android:textSize="16sp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:inputType="textEmailAddress"/>-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/etPassword"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:hint="Password"-->
+<!--            android:padding="10dp"-->
+<!--            android:background="@drawable/input_background"-->
+<!--            android:textSize="16sp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:inputType="textPassword"/>-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/etConfirmPassword"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:hint="Confirm Password"-->
+<!--            android:padding="10dp"-->
+<!--            android:background="@drawable/input_background"-->
+<!--            android:textSize="16sp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:inputType="textPassword"/>-->
+
+<!--        <Button-->
+<!--            android:id="@+id/btnRegister"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:text="Register"-->
+<!--            android:textSize="18sp"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:background="@drawable/btn_back"-->
+<!--            android:layout_marginTop="15dp"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvLogin"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Already have an account? Login"-->
+<!--            android:textSize="14sp"-->
+<!--            android:textColor="@color/blue"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:layout_marginTop="10dp"/>-->
+<!--    </LinearLayout>-->
+<!--</RelativeLayout>-->

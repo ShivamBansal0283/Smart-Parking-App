@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:alpha="0.4"/> <!-- #80 is for 50% opacity -->
+    <solid android:color="#80393E36"/> <!-- #80 is for 50% opacity -->
+    <corners android:radius="20dp"/> <!-- Rounded corners for the CardView -->
+</shape>
